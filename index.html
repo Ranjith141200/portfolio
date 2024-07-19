@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjith - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(129, 129, 210);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+            max-width: 80vw;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(174, 100, 243);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(174, 100, 243);
+        }
+
+        .secondSection,
+        .aboutSection,
+        .projectsSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondSection h1,
+        .aboutSection h1,
+        .projectsSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .internship {
+            margin: 20px 0;
+        }
+
+        .internship h2 {
+            font-size: 1.2rem;
+            color: #9c97f1;
+        }
+
+        .internship p {
+            font-size: 1rem;
+            color: #d3d3d3;
+            margin-left: 10px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .project {
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer {
+            background-color: rgb(18, 18, 62);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: rgb(174, 100, 243);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer a:hover {
+            color: rgb(129, 129, 210);
+        }
+
+        .footer .fa {
+            font-size: 24px; /* Medium size, adjust as needed */
+            margin: 0 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: rgb(174, 100, 243);
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: rgb(129, 129, 210);
+            transform: scale(1.05);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ranjith's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="mailto:ranjithshetty1412@gmail.com">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="purple">Ranjith</span>
+                <div>and I am passionate</div>
+                <span id="element"></span>
+                <br>
+                <a href="Ranjith_CV.pdf" class="btn" download>Download CV</a>
+            </div>
+
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="aboutSection">
+            <h1>About Me</h1>
+            <p>I am a perceptive and enthusiastic individual who is eager to study and delve deeply into subjects. With a strong dedication to using my talents to advance a company's objectives, I am constantly seeking opportunities to grow and learn in a supportive environment that exposes me to a variety of things. I am passionate about leveraging my skills to contribute to the success of organizations and make a meaningful impact.</p>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Internship</h1>
+            <div class="internship">
+                <h2>TDS Avenue CodeForge | July 2024 - Aug 2024</h2>
+                <p>• Committed to delivering high-quality work by conducting thorough testing and validation of client portfolios.</p>
+                <p>• Showcased my problem-solving skills by mentioning specific challenges we encountered during portfolio development.</p>
+            </div>
+            <div class="internship">
+                <h2>Full Stack Web Development Intern, Compsoft Technologies | Aug 2022 – Sep 2022</h2>
+                <p>• Collaborated with a team of developers to design and implement features for Template for Online Resume Creator.</p>
+                <p>• Implemented both front-end and back-end components, ensuring seamless integration and optimal performance.</p>
+                <p>• Utilized technologies such as HTML, CSS, JavaScript, React, Node.js, and MongoDB.</p>
+            </div>
+        </section>
+        <hr>
+        <section id="projects" class="projectsSection">
+            <h1>Project Summary</h1>
+            <div class="projects">
+                <div class="project">
+                    <a href="https://github.com/Ranjith141200/Project-management-system-in-MERN-stack.git" target="_blank">
+                        <img src="Project-management.png" alt="Project Management System in Mern Stack">
+                        <h2>Project Management System in Mern Stack</h2>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Ranjith141200/Detection_Of_Malerial_Parasites.git" target="_blank">
+                        <img src="malaria.png" alt="Detection of Malarial Parasites Using Deep Learning">
+                        <h2>Detection of Malarial Parasites Using Deep Learning</h2>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Ranjith141200/Web-develpoment-Project.git" target="_blank">
+                        <img src="quiz.png" alt="Quiz App">
+                        <h2>Quiz App</h2>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Ranjith141200/Movie-Search-App.git" target="_blank">
+                        <img src="movies.png" alt="MOVIE SEARCH APP">
+                        <h2>MOVIE SEARCH APP</h2>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Ranjith141200/All-in-One-App.git" target="_blank">
+                        <img src="all-in-one.png" alt="ALL IN ONE">
+                        <h2>ALL IN ONE</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Ranjith. All rights reserved.</p>
+        <p class="footer">
+            <a href="https://www.linkedin.com/in/ranjithshetty/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Ranjith141200" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // Set up the Typed.js animation
+        var typed = new Typed('#element', {
+            strings: ['FullStack Web Developer', 'Software Developer'],
+            typeSpeed: 50,
+        });
+
+        // Set the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
