@@ -13,6 +13,7 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -23,10 +24,11 @@
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             height: 80px;
             background-color: rgb(18, 18, 62);
+            padding: 0 20px;
         }
 
         nav ul {
@@ -53,7 +55,7 @@
             border: 0;
             background: #9c97f1;
             height: 1.2px;
-            margin: 40px 84px;
+            margin: 40px auto;
             max-width: 80vw;
         }
 
@@ -66,10 +68,12 @@
             justify-content: space-around;
             align-items: center;
             margin: 130px 0;
+            flex-wrap: wrap;
         }
 
         .firstSection>div {
-            width: 30%;
+            width: 45%;
+            margin: 10px 0;
         }
 
         .leftSection {
@@ -78,6 +82,8 @@
 
         .rightSection img {
             width: 80%;
+            display: block;
+            margin: 0 auto;
         }
 
         .purple {
@@ -161,7 +167,7 @@
         }
 
         .footer .fa {
-            font-size: 24px; /* Medium size, adjust as needed */
+            font-size: 24px;
             margin: 0 10px;
         }
 
@@ -185,6 +191,88 @@
 
         .btn:active {
             transform: scale(0.98);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstSection {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .firstSection>div {
+                width: 80%;
+            }
+
+            .rightSection img {
+                width: 100%;
+            }
+
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            nav ul {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .left {
+                font-size: 1.2rem;
+            }
+
+            .leftSection {
+                font-size: 2rem;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .internship h2 {
+                font-size: 1rem;
+            }
+
+            .internship p {
+                font-size: 0.9rem;
+            }
+
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -280,7 +368,7 @@
     <footer>
         <p>&copy; <span id="currentYear"></span> Ranjith. All rights reserved.</p>
         <p class="footer">
-            <a href="https://www.linkedin.com/in/ranjithshetty/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/ranjith-r-21a931221" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/Ranjith141200" target="_blank"><i class="fa-brands fa-github"></i></a>
         </p>
     </footer>
